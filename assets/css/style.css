@@ -1,0 +1,30 @@
+body {
+    background-image: url("./images/western.jpg");
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){
+    body {
+        background-image: url("./images/western4.jpg");
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-image: url("./images/western3.jpg");
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url("./images/western2.jpg");
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url("/images/western1.jpg");
+    }
+}
