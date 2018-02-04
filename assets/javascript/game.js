@@ -1,29 +1,52 @@
-// Define Variables need for game
-var name = .prompt(Whats your Name?)
-var word = Array["range", "rustler", "doggies", "cattle", "roundup", "lasso", "chaps","colt","bandana"];
-var guessCorrect = ("yup...");
-var guessWrong= ("nope...");
-var win =0;
-var loss = 0;
+var randomWordArr = [
+  "ride",
+  "western",
+  "saddle",
+  "horse",
+  "rustle",
+  "galllows",
+  "spurs",
+  "colt",
+  "noose"
+];
 
-//set up Game works
+var randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)
+];
 
-&
+var s;
 
+var count = 0;
 
-// some earlier code to reference
+var answerArray = [];
 
-// $(document).ready(function () {
+function startUp() 
+{
+  for (var i = 0; i < randomWord.length; i++) 
+  {
+    answerArray[i] = "_";
+  }
 
-//     // CREATE THE MISSING CODE HERE. Your code should add content to the random-number div.
-//     // ...
+  s = answerArray.join(" ");
+  document.getElementById("answer").innerHTML = s;
+}
 
-//     $("#random-button").on("click", function() {
-//       var num = Math.floor(Math.random() * 100 + 1);
-//       $("#random-number").html(num);
+function letter() {
+  var letter = document.getElementById("letter").value;
 
-
-//       // ...
-
-//     });
-//   });
+  if (letter.length > 0) 
+  {
+    for (var i = 0; i < randomWord.length; i++) 
+    {
+      if (randomWord[i] === letter) 
+      {
+        answerArray[i] = letter;
+      }
+    }
+    count++;
+    document.getElementById("counter").innerHTML = "Number of clicks" + count;
+    document.getElementById("answer").innerHTML = answerArray.join(" ");
+  }
+  if (count > 5) {
+    document.getElementById("stat").innerHTML = "Try Harder";
+  }
+}
