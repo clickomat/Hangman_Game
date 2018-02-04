@@ -14,16 +14,19 @@
 h1{
 color:black;
 }
-/* // Small devices (landscape phones, 576px and up) */
+.body{
+    background:tan;
+
 @media (min-width: 576px) {
-  .jumbotron {
-    background-image: url("../../assets/images/western4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white:
+    .jumbotron {
+      background-image: url("../../assets/images/western3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
   }
-}
+
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -32,7 +35,7 @@ color:black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white:
+    color: white;
   }
 }
 
