@@ -1,34 +1,87 @@
-.jumbotron {
-  background-image: url("../../assets/images/western.jpg");
+body {
+  background-image: url("../../assets/images/western3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: white:
-  
+  color: white;
+  margin: 0 auto;
+  font-family: "BioRhyme Expanded", serif;
+  font-size: 35px;
 }
-#answer{
+
+#answer {
+  background: whitesmoke;
+  opacity: 0.5;
+  display: inline;
+}
+h1 {
+  color: black;
+}
+.play {
+  padding: 50px;
+  text-align: center;
+}
+h1 {
+  align-content: center;
+  margin: 0 auto;
+}
+.letters {
+  align-content: center;
+  margin: 0 auto;
+  border: solid orangered 10px;
+  border-radius: 25% 25% 0 25%;
+  padding: 35px;
+  font-family: "BioRhyme Expanded", serif;
+  font-size: 20px;
+}
+
+/* @media (min-width: 300px) {
+  .jumbotron {
+    background-image: url("../../assets/images/western3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 0 auto;
+  }
+  #answer {
     background: whitesmoke;
     opacity: 0.5;
     display: inline;
-}
-h1{
-color:black;
-}
-.body{
-    background:tan;
-
-@media (min-width: 576px) {
-    .jumbotron {
-      background-image: url("../../assets/images/western3.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      color: white;
-    }
   }
+  h1 {
+    color: black;
+  }
+  .play{
+    background-color: tan;
+    margin:0;
+    align-content: center;
+  }
+}
+@media (min-width: 576px) {
+  .jumbotron {
+    background-image: url("../../assets/images/western3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+  }
+  #answer {
+    background: whitesmoke;
+    opacity: 0.5;
+    display: inline;
+  }
+  h1 {
+    color: black;
+  }
+  .play{
+    background-color: tan;
+    margin:0 auto;
+  }
+}
 
 
-/* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .jumbotron {
     background-image: url("../../assets/images/western3.jpg");
@@ -37,26 +90,57 @@ color:black;
     background-position: center;
     color: white;
   }
+  #answer {
+    background: whitesmoke;
+    opacity: 0.5;
+    display: inline;
+  }
+  h1 {
+    color: black;
+  }
+  .play {
+    background-color: tan;
+  }
 }
 
-/* // Large devices (desktops, 992px and up) */
+
 @media (min-width: 992px) {
   .jumbotron {
     background-image: url("../../assets/images/western2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white:
+    color: white;
+  }
+  #answer {
+    background: whitesmoke;
+    opacity: 0.5;
+    display: inline;
+  }
+  h1 {
+    color: black;
+  }
+  .play{
+    background-color: tan;
   }
 }
-
-/* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .jumbotron {
     background-image: url("../../assets/images/western1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white:
+    color: white;
   }
-}
+  #answer {
+    background: whitesmoke;
+    opacity: 0.5;
+    display: inline;
+  }
+  h1 {
+    color: black;
+  }
+  .play {
+    background-color: tan;
+  }
+} */

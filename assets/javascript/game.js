@@ -27,11 +27,13 @@ function startUp()
   }
 
   s = answerArray.join(" ");
-  document.getElementById("answer").innerHTML = s;
+  $("#answer").html(s);
 }
 
 function letter() {
-  var letter = document.getElementById("letter").value;
+// Im working on transfering these to jquery functions.
+  var letter = $("#letter").value(this.key);
+  // document.getElementById("letter").value;
 
   if (letter.length > 0) 
   {
